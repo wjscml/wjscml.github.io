@@ -57,10 +57,17 @@ kramdown:
 
 # 评论系统
 # Disqus（https://disqus.com/）
-disqus_username: wjscml
+# disqus_username: wjscml
 
 # Gitalk
-
+gitalk:
+  enable: true    #是否开启Gitalk评论
+  clientID: 71a1853783755e8456c8                            #生成的clientID
+  clientSecret: 9725fc62281997b952f6ff0ec4cf2149ccbb0845    #生成的clientSecret
+  repo: wjscml.github.io    #仓库名称
+  owner: wjscml    #github用户名
+  admin: wjscml
+  distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 
 # 统计
