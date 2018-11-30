@@ -66,7 +66,7 @@ gitalk:
   clientSecret: 9725fc62281997b952f6ff0ec4cf2149ccbb0845    #生成的clientSecret
   repo: wjscml.github.io    #仓库名称
   owner: wjscml    #github用户名
-  admin: wjscml
+  admin: ['wjscml']
   distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 
