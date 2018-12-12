@@ -99,6 +99,9 @@ service-worker: true
 # Friends
 friends: [
     {
+        title: "赛恩财经",
+        href: "https://www.cnibd.com"
+    },{
         title: "鑫空间",
         href: "https://www.zhangxinxu.com"
     },{
