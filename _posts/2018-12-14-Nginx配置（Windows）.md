@@ -8,8 +8,9 @@ header-img: img/post-bg-unix-linux.jpg
 catalog: true
 tags:
     - Nginx
-    - 前端
+    - 大前端
     - 工具
+    - 代理
 ---
 
 # Nginx配置
@@ -167,7 +168,7 @@ conf 目录里的 nginx.conf 文件
         #}
     }
 
-# Vue配置
+# Vue相关配置
 
 使用Vue开发时，如果在 history 模式下使用 Vue Router，需要如下配置：
 
@@ -205,17 +206,17 @@ cmd 进入Nginx解压目录 执行 start nginx 启动Nginx服务
 
 如果启动失败，可以看下logs目录下 error.log 文件里的错误信息。
 
-1.  端口占用问题
+1.端口占用问题
 
     2018/12/14 18:21:12 [emerg] 8800#5988: bind() to 0.0.0.0:80 failed (10013: An attempt was made to access a socket in a way forbidden by its access permissions)
 
 碰到类似的错误，请确认端口是否被占用或被防火墙屏蔽
 
-2. Nginx所在目录有中文
+2.Nginx所在目录有中文
 
     2018/12/14 11:55:55 [emerg] 5664#8528: CreateFile() "D:\乐贷\nginx-1.7.8/conf/nginx.conf" failed (1113: No mapping for the Unicode character exists in the target multi-byte code page)
 
-3. 启用缓存时报错
+3.启用缓存时报错
 
     2015/01/15 17:26:50 [emerg] 17068#20356: shared zone "cache_one" has no equal addresses: 02CF0000 vs 02A20000
-2015/01/15 17:26:50 [alert] 11536#11228: worker process 17068 exited with code 1
+    2015/01/15 17:26:50 [alert] 11536#11228: worker process 17068 exited with code 1
