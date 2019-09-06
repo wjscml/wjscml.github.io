@@ -19,4 +19,4 @@ VSCode每次打开项目都会在任务管理器产生2个rg.exe进程。CPU会�
 
 搜索"search.followSymlinks":true，然后设置为false就可以解决问题了。
     
-![Image text](https://github.com/wjscml/wjscml.github.io/blob/master/img/vscode-setting.png)
+![Image text](https://github.com/wjscml/wjscml.github.io/blob/master/img/vscode-setting.png?raw=true)
