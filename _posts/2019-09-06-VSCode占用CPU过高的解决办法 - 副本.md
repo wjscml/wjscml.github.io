@@ -7,8 +7,9 @@ author:     Aisopos
 header-img: img/post-bg-rwd.jpg
 catalog: true
 tags:
-    - 前端
+    - 大前端
     - 工具
+    - IDE
 ---
 
 VSCode每次打开项目都会在任务管理器产生2个rg.exe进程。CPU会直接超频大红，任务管理器CPU占用率达到100%。
