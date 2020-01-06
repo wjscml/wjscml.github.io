@@ -39,7 +39,7 @@ AB工作的完成顺序，和交付他们的时间顺序无关，所以叫“异
 无阻塞高并发，是nodeJS的招牌，要达到无阻塞高并发异步是其基本保障
 举例：查询数据从数据库，PHP第一个任务查询数据，后面有了新任务，那么后面任务会被挂起排队；而nodeJS是第一个任务挂起交给数据库去跑，然后去接待第二个任务交给对应的系统组件去处理挂起，接着去接待第三个任务...那这样子的处理必然要依赖于异步操作
 
-#### 异步回调的问题
+#### 异步回调的问题：
 
 之前处理异步是通过纯粹的回调函数的形式进行处理
 
@@ -62,19 +62,19 @@ AB工作的完成顺序，和交付他们的时间顺序无关，所以叫“异
             (err) => {console.log(err)} // 失败
         )
 
-    resolve作用是，将Promise对象的状态从“未完成”变为“成功”（即从 pending 变为 resolved），在异步操作成功时调用，并将异步操作的结果，作为参数传递出去；
-    reject作用是，将Promise对象的状态从“未完成”变为“失败”（即从 pending 变为 rejected），在异步操作失败时调用，并将异步操作报出的错误，作为参数传递出去。
+resolve作用是，将Promise对象的状态从“未完成”变为“成功”（即从 pending 变为 resolved），在异步操作成功时调用，并将异步操作的结果，作为参数传递出去；
+reject作用是，将Promise对象的状态从“未完成”变为“失败”（即从 pending 变为 rejected），在异步操作失败时调用，并将异步操作报出的错误，作为参数传递出去。
 
-    promise有三个状态：
-    1、pending[待定]初始状态
-    2、fulfilled[实现]操作成功
-    3、rejected[被否决]操作失败
-    当promise状态发生改变，就会触发then()里的响应函数处理后续步骤；
+promise有三个状态：
+1、pending[待定]初始状态
+2、fulfilled[实现]操作成功
+3、rejected[被否决]操作失败
+当promise状态发生改变，就会触发then()里的响应函数处理后续步骤；
 
-    Promise对象的状态改变，只有两种可能：
-    从pending变为fulfilled，
-    从pending变为rejected。
-    promise状态一经改变，不会再变。
+Promise对象的状态改变，只有两种可能：
+从pending变为fulfilled，
+从pending变为rejected。
+promise状态一经改变，不会再变。
 
 最简单示例：
 
@@ -118,7 +118,7 @@ promise完成后then()：
 
     结论：promise作为队列最为重要的特性，我们在任何一个地方生成了一个promise队列之后，我们可以把他作为一个变量传递到其他地方。
 
-#### Promise.all() 批量执行
+#### Promise.all() 批量执行：
 
 Promise.all([p1, p2, p3])用于将多个promise实例，包装成一个新的Promise实例，返回的实例就是普通的promise
 它接收一个数组作为参数
@@ -173,7 +173,7 @@ Promise.race() 类似于Promise.all() ，区别在于它有任意一个完成就
                 console.log(value)
             })
 
-#### 实例
+#### 实例：
 
         // Promise 写法
         // 第一步：获取城市列表
